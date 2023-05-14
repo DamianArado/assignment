@@ -1,0 +1,5 @@
+#database configuration
+db.jdbc.driver=@db.jdbc.driver@
+db.jdbc.url=@db.jdbc.url@
+db.jdbc.username=@db.jdbc.username@
+db.jdbc.password=@db.jdbc.password@
