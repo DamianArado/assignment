@@ -9,6 +9,9 @@ import org.glassfish.hk2.utilities.binding.AbstractBinder;
 
 import javax.inject.Singleton;
 
+/**
+ * The type Common binder.
+ */
 public class CommonBinder extends AbstractBinder {
 
     @Override

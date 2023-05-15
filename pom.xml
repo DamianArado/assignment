@@ -123,30 +123,30 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>com.google.code.maven-replacer-plugin</groupId>
-                <artifactId>replacer</artifactId>
-                <version>1.5.2</version>
-                <executions>
-                    <execution>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>replace</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <includes>
-                        <include>src/main/resources/*.template</include>
-                    </includes>
-                    <inputFilePattern>(.+).template</inputFilePattern>
-                    <outputFilePattern>$1</outputFilePattern>
-                    <delimiters>
-                        <delimiter>@</delimiter>
-                    </delimiters>
-                    <tokenValueMap>${config.file}</tokenValueMap>
-                </configuration>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>com.google.code.maven-replacer-plugin</groupId>-->
+<!--                <artifactId>replacer</artifactId>-->
+<!--                <version>1.5.2</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>generate-resources</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>replace</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <includes>-->
+<!--                        <include>src/main/resources/*.template</include>-->
+<!--                    </includes>-->
+<!--                    <inputFilePattern>(.+).template</inputFilePattern>-->
+<!--                    <outputFilePattern>$1</outputFilePattern>-->
+<!--                    <delimiters>-->
+<!--                        <delimiter>@</delimiter>-->
+<!--                    </delimiters>-->
+<!--                    <tokenValueMap>${config.file}</tokenValueMap>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -162,8 +162,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.5.0</version>
-                <configuration>
-                </configuration>
+                <configuration></configuration>
             </plugin>
 
 

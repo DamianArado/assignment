@@ -6,9 +6,17 @@ import org.apache.commons.dbcp2.BasicDataSource;
 import javax.inject.Inject;
 import javax.sql.DataSource;
 
+/**
+ * The type Click post data source.
+ */
 public class ClickPostDataSource {
     private final DataSource dataSource_;
 
+    /**
+     * Instantiates a new Click post data source.
+     *
+     * @param platformServerConfiguration the platform server configuration
+     */
     @Inject
     public ClickPostDataSource(PlatformServerConfiguration platformServerConfiguration) {
         BasicDataSource dataSource = new BasicDataSource();
@@ -20,6 +28,11 @@ public class ClickPostDataSource {
         dataSource_ = dataSource;
     }
 
+    /**
+     * Gets data source.
+     *
+     * @return the data source
+     */
     public DataSource getDataSource() {
         return dataSource_;
     }

@@ -11,10 +11,18 @@ import javax.inject.Inject;
 import java.util.Map;
 import java.util.Optional;
 
+/**
+ * The type Tracking service.
+ */
 public class TrackingServiceImpl implements TrackingService {
     private final ClickPostDataBase clickPostDataBase_;
     private final Logger LOGGER = LoggerFactory.getLogger(TrackingService.class);
 
+    /**
+     * Instantiates a new Tracking service.
+     *
+     * @param clickPostDataBase the click post data base
+     */
     @Inject
     public TrackingServiceImpl(ClickPostDataBase clickPostDataBase) {
         clickPostDataBase_ = clickPostDataBase;
@@ -37,7 +45,6 @@ public class TrackingServiceImpl implements TrackingService {
         return 1;
     }
 
-
     /**
      * This method will filter out duplicate courier partner scans
      *
@@ -52,6 +59,7 @@ public class TrackingServiceImpl implements TrackingService {
     /**
      * This method will save duplicate courier partner scans
      *
+     * @param courierPartnerScanTrackingStatusMap the courier partner scan tracking status map
      * @return Courier partner scans with Tracking Status after filtering Duplicate Scans.
      */
     protected @Nullable  Map<String, Integer> saveDuplicateScans(
@@ -59,7 +67,12 @@ public class TrackingServiceImpl implements TrackingService {
         return null;
     }
 
-
+    /**
+     * Filter unique scans map.
+     *
+     * @param courierPartnerScanTrackingStatusMap the courier partner scan tracking status map
+     * @return the map
+     */
     protected @Nullable  Map<String, Integer> filterUniqueScans(
             Map<String, Integer> courierPartnerScanTrackingStatusMap) {
         return null;

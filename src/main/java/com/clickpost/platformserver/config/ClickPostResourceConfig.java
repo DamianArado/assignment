@@ -6,7 +6,13 @@ import com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider;
 import org.glassfish.jersey.media.multipart.MultiPartFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
+/**
+ * The type Click post resource config.
+ */
 public class ClickPostResourceConfig extends ResourceConfig {
+    /**
+     * Instantiates a new Click post resource config.
+     */
     public ClickPostResourceConfig() {
         register(new CommonBinder());
         register(JacksonJaxbJsonProvider.class);
