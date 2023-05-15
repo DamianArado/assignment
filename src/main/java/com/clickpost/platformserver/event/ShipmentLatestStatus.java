@@ -6,6 +6,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * The type Shipment latest status.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ShipmentLatestStatus {

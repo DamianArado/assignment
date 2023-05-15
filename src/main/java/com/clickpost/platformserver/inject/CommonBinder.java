@@ -11,9 +11,13 @@ import javax.inject.Singleton;
 
 /**
  * The type Common binder.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 public class CommonBinder extends AbstractBinder {
 
+    /** {@inheritDoc} */
     @Override
     protected void configure() {
         bind(PlatformServerConfiguration.class).to(PlatformServerConfiguration.class).in(Singleton.class);

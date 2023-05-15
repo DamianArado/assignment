@@ -7,6 +7,9 @@ import java.util.ArrayList;
 
 /**
  * The type Tracking update event.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class TrackingUpdateEvent {

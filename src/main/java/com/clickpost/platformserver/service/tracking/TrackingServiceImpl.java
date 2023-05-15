@@ -13,6 +13,9 @@ import java.util.Optional;
 
 /**
  * The type Tracking service.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 public class TrackingServiceImpl implements TrackingService {
     private final ClickPostDataBase clickPostDataBase_;
@@ -28,11 +31,13 @@ public class TrackingServiceImpl implements TrackingService {
         clickPostDataBase_ = clickPostDataBase;
     }
 
+    /** {@inheritDoc} */
     @Override
     public RtoToForwardScanAnomaly[] detectRtoToForwardAnomaliesForShipment(int shipmentId) {
         return new RtoToForwardScanAnomaly[0];
     }
 
+    /** {@inheritDoc} */
     @Override
     public Optional<Integer> updateTracking(int shipmentId, String[] courierPartnerScans,
                                      @NotNull Integer shipmentCycle, @NotNull Integer nextShipmentCycle,
@@ -40,6 +45,7 @@ public class TrackingServiceImpl implements TrackingService {
         return Optional.of(1);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Integer fetchShipment(int shipmentId){
         return 1;

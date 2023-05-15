@@ -4,6 +4,9 @@ import java.util.Date;
 
 /**
  * The type Rto to forward scan anomaly.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 public class RtoToForwardScanAnomaly {
     private final int shipmentId_;

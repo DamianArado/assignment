@@ -8,6 +8,9 @@ import javax.inject.Inject;
 
 /**
  * The type Click post data base.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 public class ClickPostDataBase {
 

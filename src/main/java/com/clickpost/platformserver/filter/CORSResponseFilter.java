@@ -5,6 +5,9 @@ import javax.ws.rs.core.MultivaluedMap;
 
 /**
  * The type Cors response filter.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 public class CORSResponseFilter {
     /**

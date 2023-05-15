@@ -10,6 +10,9 @@ import javax.inject.Inject;
 
 /**
  * The type Platform server configuration.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 public class PlatformServerConfiguration {
     private static final String CONFIGURATION_FILE_NAME = "platformserver.properties";
@@ -18,7 +21,7 @@ public class PlatformServerConfiguration {
     /**
      * Instantiates a new Platform server configuration.
      *
-     * @throws ConfigurationException the configuration exception
+     * @throws org.apache.commons.configuration2.ex.ConfigurationException the configuration exception
      */
     @Inject
     public PlatformServerConfiguration() throws ConfigurationException {

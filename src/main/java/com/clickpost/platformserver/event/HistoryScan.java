@@ -5,6 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * The type History scan.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class HistoryScan {

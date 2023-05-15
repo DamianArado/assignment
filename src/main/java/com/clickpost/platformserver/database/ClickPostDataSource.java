@@ -8,6 +8,9 @@ import javax.sql.DataSource;
 
 /**
  * The type Click post data source.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 public class ClickPostDataSource {
     private final DataSource dataSource_;

@@ -8,6 +8,9 @@ import org.glassfish.jersey.server.ResourceConfig;
 
 /**
  * The type Click post resource config.
+ *
+ * @author khanh
+ * @version $Id: $Id
  */
 public class ClickPostResourceConfig extends ResourceConfig {
     /**
